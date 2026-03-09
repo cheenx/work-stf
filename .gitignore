@@ -1,0 +1,27 @@
+# Flutter/Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+*.iml
+.idea/
+.metadata
+
+# IDE
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Progress tracking (可选：如果想保留本地进度追踪，可以取消注释)
+# progress/
+
+# Claude Code (本地配置)
+.claude/
