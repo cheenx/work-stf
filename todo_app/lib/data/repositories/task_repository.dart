@@ -1,5 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../models/task.dart';
+import 'hive_task_repository.dart';
 
 /// 任务数据仓库接口
 /// 定义数据访问的抽象契约，符合依赖倒置原则（Dependency Inversion Principle）
@@ -101,5 +102,10 @@ class MemoryTaskRepository implements TaskRepository {
 /// TaskRepository Provider
 /// 使用 ProviderScope 注入 Repository 实例
 final taskRepositoryProvider = Provider<TaskRepository>((ref) {
+  // 先使用内存实现，避免循环依赖
   return MemoryTaskRepository();
+  // 后续可以通过配置切换
+  // return ref.watch(appConfigProvider).useHiveStorage
+  //   ? HiveTaskRepository()
+  //   : MemoryTaskRepository();
 });

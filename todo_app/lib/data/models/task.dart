@@ -106,6 +106,18 @@ class Task {
     };
   }
 
+  /// 从 JSON 创建任务
+  factory Task.fromJson(Map<String, dynamic> json) {
+    return Task(
+      id: json['id'],
+      title: json['title'],
+      description: json['description'] ?? '',
+      isCompleted: json['isCompleted'] ?? false,
+      createdAt: DateTime.parse(json['createdAt']),
+      updatedAt: DateTime.parse(json['updatedAt']),
+    );
+  }
+
   @override
   String toString() => 'Task(id: $id, title: $title, isCompleted: $isCompleted)';
 

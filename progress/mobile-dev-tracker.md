@@ -17,9 +17,10 @@
 	- [ ] **UI 深度:** SwiftUI LayoutProtocol / 自定义动画
 	### Flutter (Dart)
 	- [ ] **渲染原理:** Impeller 引擎适配 / OpenGL/Metal 差异
-	- [⏳ 学习中] **状态管理:** Riverpod Provider + Repository 模式实践
-	- [ ] **数据持久化:** Hive 本地存储深度应用
+	- [✅ 已掌握] **状态管理:** Riverpod Provider + Repository 模式实践
+	- [✅ 已掌握] **数据持久化:** Hive 本地存储深度应用
 	## 3. 学习历史日志
 	*格式：[日期] [主题] -> [关键收获/解决痛点]*
-	- [2026-03-10] **Clean Architecture 实践** -> 完成待办清单应用 Phase 1-2（项目初始化 + 数据层实现），掌握 Riverpod Provider 和 Repository 模式。
+	- [2026-03-16] **Hive 持久化存储** -> 完成 Hive 数据库集成，实现内存存储和 Hive 存储动态切换，掌握本地存储最佳实践。
+- [2026-03-10] **Clean Architecture 实践** -> 完成待办清单应用 Phase 1-2（项目初始化 + 数据层实现），掌握 Riverpod Provider 和 Repository 模式。
 	- [2026-03-09] **初始化** -> 建立项目基准架构，确认 MVVM + Clean Architecture 规范。
